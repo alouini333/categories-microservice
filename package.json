@@ -1,11 +1,13 @@
 {
-  "name": "node-express-backend-boilerplate",
+  "name": "categories-microservice",
   "version": "0.1.0",
   "scripts": {
     "init-schema": "ts-node initSchema.ts",
     "start": "ts-node index.ts",
+    "serve": "node dist/index.js",
     "test:unit": "jest -c jest.unit.config.js",
-    "test:integration": "jest -c jest.integration.config.js"
+    "test:integration": "jest -c jest.integration.config.js",
+    "compile": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -17,8 +19,10 @@
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.5",
     "@types/node": "^20.3.2",
     "@types/pg": "^8.10.2",
+    "jest": "^29.7.0",
     "ts-node": "^10.9.1",
     "typescript": "~5.1.3"
   },
