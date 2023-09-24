@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import * as categoryService from '../services/categoryService';
 
-// Due to time pressue the categories will be hardcoded
+// Due to time pressure the categories will be hardcoded
 export const getCategories = async (
   req: Request,
   res: Response,
